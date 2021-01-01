@@ -1,0 +1,88 @@
+body{
+  --backgroundColor: #222831;
+  display: block;
+  background-color: var(--backgroundColor);
+  color: #dddddd;
+  font-family: Gill Sans, sans-serif;
+}
+
+#title-div{
+  margin-top: 100px;
+}
+
+#title{
+  text-align: center;
+}
+#buttons{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.container {
+  width: 200px;
+  height: 200px;
+  margin: 20px;
+  transition: width 0.25s, height 0.25s;
+}
+.container img{
+  width: 100%;
+  height: 100%;
+}
+
+.container button{
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-color: var(--backgroundColor);
+  background-repeat: round;
+  border: hidden;
+  outline: none;
+}
+.container:hover{
+  width: 225px;
+  height: 225px;
+}
+
+
+#Rock{
+  background-image: url(https://purepng.com/public/uploads/large/purepng.com-stones-and-rocksstonerockmineralmaterialbuilding-1411527101323vqakw.png);
+}
+
+#Paper{
+  background-image: url(https://assets.stickpng.com/thumbs/5b06c181fad1cae04539afdd.png);
+}
+
+#Scissors{
+  background-image: url(https://i0.wp.com/freepngimages.com/wp-content/uploads/2019/06/open-scissors.png?fit=1000%2C1000);
+}
+
+#result{
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  top: 430px;
+  font-size: 12pt;
+  font-family: Arial Narrow, sans-serif;
+}
+
+.score{
+  display: inline;
+  margin: 15%;
+}
+
+#resetButton{
+  display: block;
+  border: none;
+  margin: auto;
+  margin-top: 30px;
+  font-size: 20pt;
+  color: #f05454;
+  background-color: var(--backgroundColor);
+  transition: font-size 0.25s;
+}
+
+#resetButton:hover{
+  font-size: 23pt;
+}
